@@ -1,10 +1,13 @@
 
+import Header from './components/Header.jsx';
 
 function App() {
   
 
   return (
-    <p>working on it</p>
+      <Header />
+    
+
   );
 }
 
