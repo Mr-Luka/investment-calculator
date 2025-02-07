@@ -2,6 +2,7 @@ import {useState} from 'react';
 
 import Header from './components/Header.jsx';
 import UserInput from './components/UserInput.jsx';
+import Results from './components/Results.jsx';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
         setInvestment(prevInvestment => {
             return {
                 ...prevInvestment,
-                [investmentType]: newNumber
+                [investmentType]: +newNumber
             }
         })
     }
@@ -28,6 +29,7 @@ function App() {
         changeOn={handleChange} 
         userInput={investment}
       />
+      <Results input={investment}/>
     </>
 
   );
