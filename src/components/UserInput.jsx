@@ -1,4 +1,5 @@
 export default function UserInput({changeOn, userInput}) {
+    // interactive user input and on change
     return (
         <section id="user-input">
             <div className="input-group">
